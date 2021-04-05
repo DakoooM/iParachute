@@ -122,8 +122,8 @@ CreateThread(function()
     while true do 
         Wait(1)
         if sautnordboucle then
-			DisableControlAction(0, 75, true)  -- Disable exit vehicle
-			DisableControlAction(27, 75, true) -- Disable exit vehicle
+		DisableControlAction(0, 75, true)  -- Disable exit vehicle
+		DisableControlAction(27, 75, true) -- Disable exit vehicle
             DisableControlAction(0, 0, true) -- Disable changing view
 			DisableControlAction(0, 26, true) -- Disable looking behind
 			DisableControlAction(0, 73, true) -- Disable clearing animation
@@ -140,14 +140,10 @@ CreateThread(function()
 			DisableControlAction(0, 123, true) -- NUMPAD 6
             DisableControlAction(0, 127, true) -- NUMPAD 8
             DisableControlAction(0, 128, true) -- NUMPAD 5
-            TriggerEvent('ui:toggle', false)
-            TriggerEvent("statushud:toggle", false)
             DisplayRadar(false)
             showhelp1 = true
             if IsControlJustPressed(1, 38) then
                 showhelp1 = false
-                TriggerEvent('ui:toggle', true)
-                TriggerEvent("statushud:toggle", true)
                 DisplayRadar(true)
                 EnableAllControlActions(1)
                 TaskLeaveVehicle(PlayerPedId(), heliconord, 0)
@@ -185,17 +181,13 @@ CreateThread(function()
             DisableControlAction(0, 112, true) -- NUMPAD 5
 
             DisableControlAction(0, 124, true) -- NUMPAD 4
-			DisableControlAction(0, 123, true) -- NUMPAD 6
+		DisableControlAction(0, 123, true) -- NUMPAD 6
             DisableControlAction(0, 127, true) -- NUMPAD 8
             DisableControlAction(0, 128, true) -- NUMPAD 5
-            TriggerEvent('ui:toggle', false)
-            TriggerEvent("statushud:toggle", false)
             DisplayRadar(false)
             showhelp2 = true
             if IsControlJustPressed(1, 38) then
                 showhelp2 = false
-                TriggerEvent('ui:toggle', true)
-                TriggerEvent("statushud:toggle", true)
                 DisplayRadar(true)
                 EnableAllControlActions(1)
                 TaskLeaveVehicle(PlayerPedId(), helicosud, 0)
