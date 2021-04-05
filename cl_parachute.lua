@@ -29,6 +29,11 @@ local function Draw2DText(msg, time)
     EndTextCommandPrint(time, 1)
 end
 
+local function HelpNotification(msg)
+    AddTextEntry('HelpNotification', msg)
+    DisplayHelpTextThisFrame('HelpNotification', false)
+end
+
 local function SautenParachute(typedesaut, model, coords, heading)
     if typedesaut == "nord" then
         ESX.Game.SpawnLocalVehicle(GetHashKey(model), coords, heading, function(helico1) 
