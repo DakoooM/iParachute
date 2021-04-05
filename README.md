@@ -1,2 +1,2 @@
 # iParachute
-Script activity for fivem (0.01ms when not in use)
+Simple Script activity for fivem (0.01ms when not in use)
