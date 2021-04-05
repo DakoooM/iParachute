@@ -1,5 +1,5 @@
 ESX = nil
-TriggerEvent('Blow:getSharedObject', function(obj) ESX = obj end)
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterServerEvent("parachcute:pourpayer")
 AddEventHandler("parachcute:pourpayer", function(activ)
